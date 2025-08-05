@@ -32,7 +32,11 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section id = "faq" className="py-24 bg-gradient-to-br from-blue-50 to-white min-h-[80vh] px-4">
+    <section
+      id="faq"
+      data-aos="fade-up"
+      className="py-24 bg-gradient-to-br from-blue-100 via-blue-50 to-white min-h-[80vh] px-4"
+    >
       <div className="max-w-3xl mx-auto text-center mb-14">
         <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-800 tracking-tight drop-shadow-md">
           Frequently Asked <span className="text-blue-500">Questions</span>
@@ -46,7 +50,13 @@ export default function FAQSection() {
           className="space-y-4 bg-white/70 backdrop-blur-xl rounded-2xl border border-blue-100 shadow-lg p-1"
         >
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="">
+            <AccordionItem
+              key={index}
+              value={`item-${index}`}
+              data-aos="zoom-in"
+              data-aos-delay={index * 150}
+              className="transition-transform"
+            >
               <AccordionTrigger className="text-xl font-semibold text-gray-800 px-6 py-5 flex justify-between items-center">
                 {faq.question}
               </AccordionTrigger>

@@ -46,7 +46,6 @@ const plans: Plan[] = [
       "Custom integrations",
       "Dedicated manager",
       "Enterprise security",
-      //"Onboarding & training",
     ],
     highlight: false,
   },
@@ -65,9 +64,26 @@ export default function PricingSection() {
         <h2 className="text-3xl sm:text-4xl font-extrabold mb-4 text-blue-700 tracking-tight">
           Pricing Plans
         </h2>
-        <p className="text-gray-600 text-lg max-w-xl mx-auto">
+        <p className="text-gray-600 text-lg max-w-xl mx-auto mb-6">
           Choose the plan that fits your needs. Upgrade or cancel anytime.
         </p>
+        
+        {/* Custom Pricing Calculator Section */}
+        <div className="bg-blue-50 border border-blue-200 rounded-2xl p-6 mb-8">
+          <h3 className="text-xl font-semibold text-blue-800 mb-3">
+            Need a Custom Solution?
+          </h3>
+          <p className="text-blue-700 mb-4">
+            Get personalized pricing based on your specific business needs, team size, and requirements.
+          </p>
+          <Button
+            onClick={() => router.push("/pricing-calculator")}
+            variant="default"
+            className="bg-blue-600 text-white px-8 py-3 text-lg font-semibold rounded-xl hover:bg-blue-700 transition-all duration-300 shadow-lg hover:shadow-xl"
+          >
+            Calculate Custom Pricing
+          </Button>
+        </div>
       </div>
 
       <div className="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -80,7 +96,7 @@ export default function PricingSection() {
               key={plan.name}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`rounded-3xl border p-8 flex flex-col items-center bg-white cursor-pointer bg-blue-700
+              className={`rounded-3xl border p-8 flex flex-col items-center bg-white cursor-pointer
               transition-transform duration-500 ease-in-out shadow-lg
               ${
                 isHighlight
