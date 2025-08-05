@@ -25,8 +25,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} min-h-screen bg-gradient-to-br from-gray-900 via-[#101E2A] to-black text-gray-100 antialiased`}
       >
+        <div className="fixed inset-0 -z-10 pointer-events-none">
+          {/* Optional: Add a subtle blurred glowing gradient blob for extra aesthetics */}
+          <div className="absolute right-24 top-0 w-96 h-96 bg-fuchsia-700 opacity-20 blur-3xl rounded-full pointer-events-none"></div>
+          <div className="absolute left-0 bottom-0 w-80 h-80 bg-blue-800 opacity-20 blur-2xl rounded-full pointer-events-none"></div>
+        </div>
         {children}
       </body>
     </html>
