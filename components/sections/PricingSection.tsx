@@ -80,7 +80,7 @@ export default function PricingSection() {
               key={plan.name}
               onMouseEnter={() => setHoveredIndex(index)}
               onMouseLeave={() => setHoveredIndex(null)}
-              className={`rounded-3xl border p-8 flex flex-col items-center bg-white cursor-pointer
+              className={`rounded-3xl border p-8 flex flex-col items-center bg-white cursor-pointer bg-blue-700
               transition-transform duration-500 ease-in-out shadow-lg
               ${
                 isHighlight

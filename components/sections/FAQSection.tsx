@@ -32,15 +32,11 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <section className="py-24 bg-gradient-to-br from-blue-50 to-white min-h-[80vh] px-4">
+    <section id = "faq" className="py-24 bg-gradient-to-br from-blue-50 to-white min-h-[80vh] px-4">
       <div className="max-w-3xl mx-auto text-center mb-14">
         <h2 className="text-4xl sm:text-5xl font-extrabold mb-4 text-blue-800 tracking-tight drop-shadow-md">
           Frequently Asked <span className="text-blue-500">Questions</span>
         </h2>
-        <p className="text-gray-500 text-lg max-w-xl mx-auto">
-          Everything you need to know about{" "}
-          <span className="text-blue-400 font-semibold">ADmyBRAND AI Suite</span>.
-        </p>
       </div>
 
       <div className="max-w-2xl mx-auto">
