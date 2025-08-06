@@ -6,19 +6,7 @@ ADmyBRAND AI Suite is an all-in-one, modern marketing automation app leveraging 
 
 Key Features:
 
-AI Campaign Automation: Automate your marketing campaigns with intelligent workflows.
-
-Real-Time Analytics: Dashboard provides actionable insights with live data.
-
-Seamless Integrations: Plug and play with popular marketing and analytics tools.
-
-Enterprise-Grade Security: All your data is protected with industry standards.
-
-Smart Content Generation: Create campaign content and creatives using generative AI.
-
-Collaboration Tools: Assign tasks, approve campaigns, and track teamwork.
-
-Elegant UI/UX: Animations with Framer Motion and AOS, custom styling with Tailwind & shadcn/ui, and sticky navigation.
+This project delivers a modern, responsive marketing automation site built with Next.js, Tailwind CSS, shadcn/ui components, and advanced animation using AOS and Framer Motion. Key features include a visually engaging hero section with animated backgrounds, a sticky navigation bar with smooth scrolling to sections like Features, Pricing, About, Blog (Testimonials), and FAQ; interactive feature cards with pop-up hover effects; a beautifully animated pricing table; a team/about section with partner badge; a testimonial carousel with formal styling and scroll animations; an accordion-based FAQ with rich motion effects; and a gradient info banner—all designed for seamless, professional user experience and easy customization.
 
 🛠️ Setup Instructions
 1. Installation
